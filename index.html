@@ -2,147 +2,33 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Social links profile</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
-    *{
-      box-sizing: border-box;
-    }
-    
-    body {
-    background-color: hsl(0, 0%, 8%);
-    margin-left: 500px;
-    font-family: 'Inter', sans-serif  ;
-   
-    }
-    .outer-margin{
-      align-items: center;
-      padding: 25px;
-      display: inline-block;
-      background-color:hsl(0, 0%, 12%);
-      border-radius: 5px;
-      margin-top: 30px;
-      position: fixed;
-    }
-    .inner-margin{
-      width: 250px;
-    }
-    .image-class{
-      align-items: center;
-    }
-    .main-image{
-     margin-left: 80px;
-     width: 75px;
-     height: 75px;
-     border-radius: 100%;
-    }
-    .profile-details{
-      text-align: center;
-       
-    }
-    .profile-description{
-      color: rgba(202, 201, 201, 0.913);
-      font-family: arial;
-      font-size: 13px;
-      margin-bottom: 17px;
-    }
-    .profile-name{
-      font-size: 22px;
-      font-weight: 700;
-      color: white;
-      font-family: arial;
-      line-height: 5px;
-      margin-bottom: 0;
-    }
-    .profile-location{
-      font-size: 13px;
-      color: hsl(75, 94%, 57%);
-      font-weight: 600;
-      font-family: arial;
-      margin-bottom: 20px;
-      margin-top: 19px;
-      
-      
-    }
-
-
-    .git-button,.front-button,.linkedin-button,
-    .twitter-button,.instagram-button {
-      display: block;
-      width: 100%;
-      margin-top: 12px;
-      height: 35px;
-      border-radius: 6px;
-      border: none;
-      color:  hsl(0, 0%, 100%);
-      background-color:  hsl(0, 0%, 20%);
-      font-weight: 600;
-      cursor: pointer;
-     }
-     .git-button:hover{
-      background-color:hsl(75, 94%, 57%);
-     color: rgba(55, 53, 53, 0.829);
-     }
-     .front-button:hover{
-      background-color:hsl(75, 94%, 57%);
-     color:rgba(55, 53, 53, 0.829);
-     }
-     .linkedin-button:hover{
-      background-color:hsl(75, 94%, 57%);
-     color:rgba(55, 53, 53, 0.829);
-     }
-    .twitter-button:hover{
-      background-color:hsl(75, 94%, 57%);
-     color:rgba(55, 53, 53, 0.829);
-    }
-    .instagram-button:hover{
-     background-color:hsl(75, 94%, 57%);
-     color: rgba(55, 53, 53, 0.829);
-    }
-    .attribution { font-size: 11px; text-align: center; 
-    margin-top: 8px;}
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
- <di class="outer-margin">
-    <div class="inner-margin">
-      <div class="image-class">
-        <img src="assets/images/avatar-jessica.jpeg" class="main-image">
-      </div>
-      <div class="profile-details">
-        <p class="profile-name">
-          Jessica Randall
-        </p>
-        <p class="profile-location">
-          London, United Kingdom
-        </p>
-        <p class="profile-description">
-          "Front-end developer and avid reader."
-        </p>
-      </div>
-      <div class="media-handles-button">
-        <button class="git-button">GitHub</button>
-        <button class="front-button"> Frontend Mentor</button>
-        <button class="linkedin-button"> LinkedIn</button>
-        <button class="twitter-button"> Twitter</button>
-        <button class="instagram-button">Instagram </button>
-      </div>
+  <div class="main">
+    <div class="profile">
+       <img src="assets/images/avatar-jessica.jpeg" class="">
     </div>
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Awal</a>.
+    <div class="profile-details">
+      <div class="info">
+        <p class="name"> Jessica Randall</p>
+        <p class="location"> London, United Kingdom</p>
+      </div>
+      <p class="credentials"> "Front-end developer and avid reader."</p>
     </div>
- </di>
-
-  
-  
-  
+    <div class="buttoms">
+      <button>GitHub</button>
+      <button>Frontend Mentor</button>
+      <button> LinkedIn</button>
+      <button>Twitter</button>
+      <button>Instagram</button>
+    </div>
+  </div>
 </body>
 </html>

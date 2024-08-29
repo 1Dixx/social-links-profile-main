@@ -1,0 +1,115 @@
+*{
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: hsl(0, 0%, 8%);
+  font-family: "inter", arial;
+  
+}
+.main{
+  display: flex;
+  flex-direction: column;
+  width: 330px;
+  height: 540px;
+  background-color:hsl(0, 0%, 12%);
+  margin: 20px 0px 0px 20px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+ 
+  
+
+}
+.profile {
+  flex: 1; 
+  display: flex;
+  align-items: center; 
+  margin-bottom: 0;
+  padding-top: 15px;
+}
+.profile img{
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  margin-bottom: 0;
+}
+.info{
+  margin-top: 0px;
+  margin-bottom: 25px;
+}
+.profile-details{
+  flex:1;
+  text-align: center;
+  }
+.name{
+  color: rgb(232, 229, 229);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 3px;
+}
+.location{
+  color: hsl(75, 94%, 57%);
+  font-size: 12px;
+  font-weight: 600;
+}
+.credentials{
+  color: rgb(232, 229, 229);
+  font-size:13px ;
+  margin-bottom: 3px;
+  
+}
+.buttoms{
+ flex: 1;
+ margin-bottom: 5px;
+}
+.buttoms button{
+  display: block;
+  margin-bottom: 15px;
+  width: 280px;
+  color: rgb(232, 229, 229);
+  background-color: hsl(0, 0%, 20%);
+  height: 40px;
+  border: none;
+  border-radius: 7px;
+  font-weight: 700;
+  font-family: arial;
+
+
+}
+.buttoms button:hover{
+  background-color:hsl(75, 94%, 57%);
+  color: rgb(26, 26, 26);
+  cursor: pointer;
+}
+@media ( max-width:700px){
+  .main{
+    width:300px ;
+    height:480px ;
+  }
+  .buttoms button{
+    width: 230px;
+    height: 30px;
+    margin-bottom: 10px;
+  }
+  .profile-details{
+    width: 220px;
+  }
+}
+@media(min-width:1050px){
+  .main{
+    width:360px ;
+    height:565px ;
+  }
+  .buttoms button{
+    width: 326px;
+    height: 47px;
+    margin-bottom: 20px;
+  }
+  .profile-details{
+    width: 250px;
+  }
+}
